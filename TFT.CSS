@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  background: radial-gradient(circle at center top, #b32d2e 0%, #5a0d0d 100%);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: radial-gradient(circle at center top, #b32d2e 0%, #5a0d0d 100%);
+  color: #fff;
+}
+
+
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* ✅ Klicks gehen durch */
+  z-index: 0; /* Ganz nach hinten legen */
+}
+
+
+/* Vorhang */
+.curtain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+}
+
+.curtain {
+  flex: 1;
+  height: 100%;
+  background-image: url('vorhang.jpg'); /* Dein Vorhangbild */
+  background-size: 200% 100%; /* 2x Breite, damit wir schneiden können */
+  background-repeat: no-repeat;
+  transition: transform 3s ease-in-out;
+}
+
+.curtain.left {
+  background-position: left center;
+}
+
+.curtain.right {
+  background-position: right center;
+}
+
+body.loaded .curtain.left {
+  transform: translateX(-100%);
+}
+
+body.loaded .curtain.right {
+  transform: translateX(100%);
+}
+
+
+
+
+/* Öffnen-Effekt */
+body.loaded .curtain.left {
+  transform: translateX(-100%);
+}
+
+body.loaded .curtain.right {
+  transform: translateX(100%);
+}
+
+
+/* Inhalt */
+.content {
+  padding: 20px;
+}
+
+.content.hidden {
+  opacity: 0;
+}
+
+.logo {
+  max-width: 550px; /* vorher vielleicht 300px */
+  height: auto;
+}
+
+.motto {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: gold;
+}
+
+/* Buttons & Kontaktfelder */
+.button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(145deg, #b8860b, #daa520);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px gold;
+  background: linear-gradient(145deg, #ffd700, #ffcc33);
+}
+
+/* Kontakt-Überschrift */
+.kontakt-header {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: gold;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .motto {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
