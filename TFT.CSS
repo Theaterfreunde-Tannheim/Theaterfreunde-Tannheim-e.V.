@@ -43,7 +43,7 @@ body::after {
 .curtain {
   flex: 1;
   height: 100%;
-  background-image: url('vorhang.jpg'); /* Dein Vorhangbild */
+  background-image: url('Vorhang.jpg'); /* Dein Vorhangbild */
   background-size: 200% 100%; /* 2x Breite, damit wir schneiden können */
   background-repeat: no-repeat;
   transition: transform 3s ease-in-out;
@@ -88,7 +88,7 @@ body.loaded .curtain.right {
 }
 
 .logo {
-  max-width: 550px; /* vorher vielleicht 300px */
+  max-width: 370px; /* vorher vielleicht 300px */
   height: auto;
 }
 
@@ -142,3 +142,4 @@ body.loaded .curtain.right {
     padding: 12px;
   }
 }
+
