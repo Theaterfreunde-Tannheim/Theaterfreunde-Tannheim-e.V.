@@ -132,6 +132,11 @@ body.loaded .curtain.right {
   color: gold;
 }
 
+.email-button {
+    color: white;                /* Textfarbe */
+    text-decoration: none;       /* Unterstreichung entfernen */
+}
+
 /* Mobile */
 @media (max-width: 600px) {
   .motto {
@@ -142,5 +147,6 @@ body.loaded .curtain.right {
     padding: 12px;
   }
 }
+
 
 
