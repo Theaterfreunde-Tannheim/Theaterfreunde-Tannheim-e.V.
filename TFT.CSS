@@ -88,7 +88,7 @@ body.loaded .curtain.right {
 }
 
 .logo {
-  max-width: 370px; /* vorher vielleicht 300px */
+  max-width: 350px; /* vorher vielleicht 300px */
   height: auto;
 }
 
@@ -142,4 +142,5 @@ body.loaded .curtain.right {
     padding: 12px;
   }
 }
+
 
