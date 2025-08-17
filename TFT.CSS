@@ -88,7 +88,7 @@ body.loaded .curtain.right {
 }
 
 .logo {
-  max-width: 350px; /* vorher vielleicht 300px */
+  max-width: 370px; /* vorher vielleicht 300px */
   height: auto;
 }
 
@@ -132,11 +132,6 @@ body.loaded .curtain.right {
   color: gold;
 }
 
-.email-button {
-    color: white;                /* Textfarbe */
-    text-decoration: none;       /* Unterstreichung entfernen */
-}
-
 /* Mobile */
 @media (max-width: 600px) {
   .motto {
@@ -147,6 +142,3 @@ body.loaded .curtain.right {
     padding: 12px;
   }
 }
-
-
-
